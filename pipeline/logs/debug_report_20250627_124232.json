@@ -1,0 +1,299 @@
+{
+  "summary": {
+    "total_time": 6.020100355148315,
+    "total_steps": 32,
+    "success_count": 30,
+    "warning_count": 2,
+    "error_count": 0
+  },
+  "detailed_log": [
+    {
+      "step": 1,
+      "name": "Data File Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "All 6 CSV files found",
+      "error": null
+    },
+    {
+      "step": 2,
+      "name": "File Analysis: students.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "Rows: 7200, Columns: 29, Size: 2.03MB",
+      "error": null
+    },
+    {
+      "step": 3,
+      "name": "File Analysis: teachers.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "Rows: 94, Columns: 25, Size: 0.04MB",
+      "error": null
+    },
+    {
+      "step": 4,
+      "name": "File Analysis: subjects.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "Rows: 73, Columns: 21, Size: 0.02MB",
+      "error": null
+    },
+    {
+      "step": 5,
+      "name": "File Analysis: rooms.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "Rows: 66, Columns: 33, Size: 0.03MB",
+      "error": null
+    },
+    {
+      "step": 6,
+      "name": "File Analysis: activities.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "Rows: 125, Columns: 25, Size: 0.04MB",
+      "error": null
+    },
+    {
+      "step": 7,
+      "name": "File Analysis: slot_index.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "Rows: 864, Columns: 22, Size: 0.17MB",
+      "error": null
+    },
+    {
+      "step": 8,
+      "name": "Data Optimizer Import",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "TimetableDataOptimizer imported",
+      "error": null
+    },
+    {
+      "step": 9,
+      "name": "Optimizer Initialization",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "DataOptimizer instance created",
+      "error": null
+    },
+    {
+      "step": 10,
+      "name": "Optimized Data Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:27",
+      "elapsed_seconds": 0.89,
+      "details": "Found existing optimized data: (350, 10)",
+      "error": null
+    },
+    {
+      "step": 11,
+      "name": "Encoder Loading",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Found 9 encoders",
+      "error": null
+    },
+    {
+      "step": 12,
+      "name": "Encoder: day",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Type: LabelEncoder, Classes: 5",
+      "error": null
+    },
+    {
+      "step": 13,
+      "name": "Encoder: time_slot",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Type: LabelEncoder, Classes: 7",
+      "error": null
+    },
+    {
+      "step": 14,
+      "name": "Encoder: department",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Type: LabelEncoder, Classes: 5",
+      "error": null
+    },
+    {
+      "step": 15,
+      "name": "Encoder: batch_type",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Type: LabelEncoder, Classes: 1",
+      "error": null
+    },
+    {
+      "step": 16,
+      "name": "Encoder: subject_type",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Type: LabelEncoder, Classes: 1",
+      "error": null
+    },
+    {
+      "step": 17,
+      "name": "Encoder: campus",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Type: LabelEncoder, Classes: 3",
+      "error": null
+    },
+    {
+      "step": 18,
+      "name": "Encoder: room_type",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Type: LabelEncoder, Classes: 2",
+      "error": null
+    },
+    {
+      "step": 19,
+      "name": "Encoder: teacher_dept",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Type: LabelEncoder, Classes: 10",
+      "error": null
+    },
+    {
+      "step": 20,
+      "name": "Encoder: scaler",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:28",
+      "elapsed_seconds": 2.15,
+      "details": "Type: StandardScaler",
+      "error": null
+    },
+    {
+      "step": 21,
+      "name": "PyTorch Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:31",
+      "elapsed_seconds": 5.12,
+      "details": "Device: cpu, Version: 2.7.1+cpu",
+      "error": null
+    },
+    {
+      "step": 22,
+      "name": "Model Files Check",
+      "status": "WARNING",
+      "timestamp": "2025-06-27 12:42:31",
+      "elapsed_seconds": 5.12,
+      "details": "No trained models found",
+      "error": null
+    },
+    {
+      "step": 23,
+      "name": "Training System Test",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:31",
+      "elapsed_seconds": 5.12,
+      "details": "Training modules are importable and functional",
+      "error": null
+    },
+    {
+      "step": 24,
+      "name": "Anomaly Detector Import",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:31",
+      "elapsed_seconds": 5.12,
+      "details": "AnomalyDetector imported",
+      "error": null
+    },
+    {
+      "step": 25,
+      "name": "Threshold Files Check",
+      "status": "WARNING",
+      "timestamp": "2025-06-27 12:42:31",
+      "elapsed_seconds": 5.12,
+      "details": "No threshold files found",
+      "error": null
+    },
+    {
+      "step": 26,
+      "name": "Anomaly Detection Test",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:31",
+      "elapsed_seconds": 5.12,
+      "details": "Sample slot data prepared for testing",
+      "error": null
+    },
+    {
+      "step": 27,
+      "name": "OR-Tools Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:32",
+      "elapsed_seconds": 5.31,
+      "details": "OR-Tools CP-SAT solver available",
+      "error": null
+    },
+    {
+      "step": 28,
+      "name": "Constraint Solver Import",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:32",
+      "elapsed_seconds": 5.32,
+      "details": "TimetableConstraintSolver imported",
+      "error": null
+    },
+    {
+      "step": 29,
+      "name": "Constraint Solver Init",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:32",
+      "elapsed_seconds": 5.37,
+      "details": "Solver instance created",
+      "error": null
+    },
+    {
+      "step": 30,
+      "name": "Database Model Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:32",
+      "elapsed_seconds": 6.02,
+      "details": "TimetableSlot model accessible",
+      "error": null
+    },
+    {
+      "step": 31,
+      "name": "API Endpoints Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:32",
+      "elapsed_seconds": 6.02,
+      "details": "Checked 4 endpoint definitions",
+      "error": null
+    },
+    {
+      "step": 32,
+      "name": "Template Files Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:42:32",
+      "elapsed_seconds": 6.02,
+      "details": "Found 3/3 templates",
+      "error": null
+    }
+  ]
+}

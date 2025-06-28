@@ -1,0 +1,131 @@
+{% extends "teacher/base.html" %}
+
+{% block title %}My Students{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2><i class="fas fa-users me-2"></i>My Students</h2>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary" onclick="refreshStudents()">
+                        <i class="fas fa-refresh me-1"></i>Refresh
+                    </button>
+                </div>
+            </div>
+
+            {% if batches %}
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Teaching Summary</h5>
+                            <p class="mb-1"><strong>Total Students:</strong> {{ students|length }}</p>
+                            <p class="mb-0"><strong>Batches:</strong> {{ batches|length }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Batches Taught</h5>
+                            <div class="d-flex flex-wrap">
+                                {% for batch in batches %}
+                                <span class="badge bg-primary me-1 mb-1">{{ batch }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if students %}
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Student List</h5>
+                    <div class="input-group" style="width: 300px;">
+                        <input type="text" class="form-control" id="studentSearch" placeholder="Search students...">
+                        <button class="btn btn-outline-secondary" type="button" onclick="searchStudents()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0" id="studentsTable">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Student ID</th>
+                                    <th>Name</th>
+                                    <th>Batch</th>
+                                    <th>Section</th>
+                                    <th>Department</th>
+                                    <th>Campus</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for student in students %}
+                                <tr>
+                                    <td><strong>{{ student.student_id }}</strong></td>
+                                    <td>{{ student.full_name }}</td>
+                                    <td><span class="badge bg-secondary">{{ student.batch_id }}</span></td>
+                                    <td>{{ student.section }}</td>
+                                    <td>{{ student.department }}</td>
+                                    <td>{{ student.campus }}</td>
+                                    <td>{{ student.email or 'N/A' }}</td>
+                                    <td>{{ student.phone or 'N/A' }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="card">
+                <div class="card-body text-center py-5">
+                    <i class="fas fa-users fa-3x text-muted mb-3"></i>
+                    <h4 class="text-muted">No Students Found</h4>
+                    <p class="text-muted">No students are currently assigned to your classes.</p>
+                    <p class="text-muted">Please check your timetable assignments or contact the administrator.</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script>
+function refreshStudents() {
+    location.reload();
+}
+
+function searchStudents() {
+    const searchTerm = document.getElementById('studentSearch').value.toLowerCase();
+    const table = document.getElementById('studentsTable');
+    const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+    
+    for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        const cells = row.getElementsByTagName('td');
+        let found = false;
+        
+        for (let j = 0; j < cells.length; j++) {
+            if (cells[j].textContent.toLowerCase().includes(searchTerm)) {
+                found = true;
+                break;
+            }
+        }
+        
+        row.style.display = found ? '' : 'none';
+    }
+}
+
+// Real-time search
+document.getElementById('studentSearch').addEventListener('input', searchStudents);
+</script>
+{% endblock %}

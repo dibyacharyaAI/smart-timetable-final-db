@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block title %}My Timetable - Smart Timetable System{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-calendar-alt text-primary"></i> My Weekly Timetable</h2>
+        <div>
+            <button class="btn btn-info me-2" onclick="showWeeklyDownloadModal()">
+                <i class="fas fa-calendar-week"></i> Weekly Download
+            </button>
+            <div class="btn-group">
+                <a href="{{ url_for('student.download_timetable', format='csv') }}" class="btn btn-outline-success">
+                    <i class="fas fa-download"></i> Download CSV
+                </a>
+                <a href="{{ url_for('student.download_timetable', format='excel') }}" class="btn btn-outline-primary">
+                    <i class="fas fa-file-excel"></i> Download Excel
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Info Card -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5><i class="fas fa-user-graduate"></i> Student Information</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <strong>Student ID:</strong> {{ current_user.student_id }}
+                        </div>
+                        <div class="col-md-3">
+                            <strong>Name:</strong> {{ current_user.full_name }}
+                        </div>
+                        <div class="col-md-3">
+                            <strong>Batch:</strong> {{ current_user.batch_id }}
+                        </div>
+                        <div class="col-md-3">
+                            <strong>Section:</strong> {{ current_user.section }}
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-3">
+                            <strong>Department:</strong> {{ current_user.department }}
+                        </div>
+                        <div class="col-md-3">
+                            <strong>Campus:</strong> {{ current_user.campus }}
+                        </div>
+                        <div class="col-md-6">
+                            <strong>Total Classes This Week:</strong> 
+                            <span class="badge bg-success">{{ slots|length }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timetable Grid -->
+    <div class="card">
+        <div class="card-header bg-info text-white">
+            <h5><i class="fas fa-table"></i> Weekly Schedule</h5>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width: 100px;">Time</th>
+                            {% for day in days %}
+                            <th class="text-center">{{ day }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for time_start, time_end in time_slots %}
+                        <tr>
+                            <td class="bg-light fw-bold text-center">
+                                <small>{{ time_start }}</small><br>
+                                <small>{{ time_end }}</small>
+                            </td>
+                            {% for day in days %}
+                            {% set slot = slots|selectattr('day', 'equalto', day)|selectattr('time_start', 'equalto', time_start)|first %}
+                            <td class="p-1">
+                                {% if slot %}
+                                <div class="slot-card border rounded p-2 bg-primary text-white" style="min-height: 80px;">
+                                    <small class="fw-bold">{{ slot.subject_code }}</small><br>
+                                    <small>{{ slot.subject_name[:20] }}{% if slot.subject_name|length > 20 %}...{% endif %}</small><br>
+                                    <small><i class="fas fa-chalkboard-teacher"></i> {{ slot.teacher_name }}</small><br>
+                                    <small><i class="fas fa-map-marker-alt"></i> {{ slot.room_id }} ({{ slot.campus }})</small><br>
+                                    <small class="badge bg-warning text-dark">{{ slot.activity_type }}</small>
+                                </div>
+                                {% else %}
+                                <div class="slot-card border rounded p-2 bg-light text-muted d-flex align-items-center justify-content-center" style="min-height: 80px;">
+                                    <small>Free Period</small>
+                                </div>
+                                {% endif %}
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card border-primary">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-primary">
+                        <i class="fas fa-book"></i> Total Subjects
+                    </h5>
+                    <h3 class="text-primary">{{ subjects_count }}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-success">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-success">
+                        <i class="fas fa-chalkboard-teacher"></i> Teachers
+                    </h5>
+                    <h3 class="text-success">{{ teachers_count }}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-info">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-info">
+                        <i class="fas fa-clock"></i> Weekly Hours
+                    </h5>
+                    <h3 class="text-info">{{ total_hours }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subject Details -->
+    <div class="card mt-4">
+        <div class="card-header bg-secondary text-white">
+            <h5><i class="fas fa-list"></i> Subject Details</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Subject Code</th>
+                            <th>Subject Name</th>
+                            <th>Teacher</th>
+                            <th>Activity Type</th>
+                            <th>Hours/Week</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for subject in subject_details %}
+                        <tr>
+                            <td><span class="badge bg-primary">{{ subject.subject_code }}</span></td>
+                            <td>{{ subject.subject_name }}</td>
+                            <td>{{ subject.teacher_name }}</td>
+                            <td><span class="badge bg-info">{{ subject.activity_type }}</span></td>
+                            <td><span class="badge bg-success">{{ subject.hours }}</span></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.slot-card {
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+}
+
+.slot-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.table th {
+    vertical-align: middle;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .slot-card {
+        font-size: 0.75rem;
+        min-height: 60px !important;
+    }
+    
+    .table-responsive {
+        font-size: 0.85rem;
+    }
+}
+</style>
+
+<script>
+// Add any interactive functionality if needed
+document.addEventListener('DOMContentLoaded', function() {
+    // Highlight current time slot if applicable
+    const now = new Date();
+    const currentTime = now.toTimeString().slice(0, 5);
+    
+    // Add tooltips to slot cards for better mobile experience
+    const slotCards = document.querySelectorAll('.slot-card');
+    slotCards.forEach(card => {
+        if (card.textContent.trim() !== 'Free Period') {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', function() {
+                // Optional: Add click functionality for mobile users
+            });
+        }
+    });
+});
+</script>
+{% endblock %}

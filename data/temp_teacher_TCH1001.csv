@@ -1,0 +1,39 @@
+slot_index,batch_id,section,day,time_start,time_end,subject_code,subject_name,teacher_id,teacher_name,room_id,room_name,campus,activity_type,department,scheme
+8,A05,A05,Monday,17:00,18:00,HASS_A,Humanities Arts and Social Science Elective,TCH1001,Aryan Maharaj,R1040,Theory Classroom CLA15,Campus-3,Lecture,Electrical Engineering,A
+30,A07,A07,Thursday,11:20,12:20,BEE_LAB_A,Basic Electrical Engineering Lab,TCH1001,Aryan Maharaj,R1022,Theory Classroom C-28,Campus-3,Lecture,Electrical Engineering,A
+17,A10,A10,Tuesday,17:00,18:00,ENG_A,English,TCH1001,Aryan Maharaj,R1044,Theory Classroom 101,Campus-3,Lecture,Electrical Engineering,A
+51,A11,A11,Saturday,15:00,16:00,CHEM_LAB_A,Chemistry Lab,TCH1001,Aryan Maharaj,R1039,Theory Classroom CLA14,Campus-8,Lecture,Information Technology,A
+49,A12,A12,Saturday,13:00,14:00,B.ETC_A,Basic Electronics,TCH1001,Aryan Maharaj,R1027,Theory Classroom CLA2,Campus-8,Lecture,Electronics Engineering,A
+51,A13,A13,Saturday,15:00,16:00,ENGG_LAB_A,Engineering Lab,TCH1001,Aryan Maharaj,R1047,Theory Classroom B-103,Campus-8,Lecture,Electronics Engineering,A
+44,A14,A14,Friday,17:00,18:00,ENGG_LAB_A,Engineering Lab,TCH1001,Aryan Maharaj,R1033,Theory Classroom CLA8,Campus-3,Lecture,Electrical Engineering,A
+46,A14,A14,Saturday,09:00,10:00,HASS_A,Humanities Arts and Social Science Elective,TCH1001,Aryan Maharaj,R1066,Sports Yoga (SY),Campus-3,Lecture,Electrical Engineering,A
+32,A15,A15,Thursday,14:00,15:00,BEE_A,Basic Electrical Engineering,TCH1001,Aryan Maharaj,R1019,Theory Classroom C-25,Campus-8,Lecture,Electronics Engineering,A
+41,A16,A16,Friday,14:00,15:00,SY_A,Sports and Yoga,TCH1001,Aryan Maharaj,R1045,Theory Classroom B-101,Campus-8,Lecture,Electronics Engineering,A
+51,A16,A16,Saturday,15:00,16:00,ENGG_LAB_A,Engineering Lab,TCH1001,Aryan Maharaj,R1023,Theory Classroom A11,Campus-8,Lecture,Electronics Engineering,A
+14,A18,A18,Tuesday,14:00,15:00,SY_A,Sports and Yoga,TCH1001,Aryan Maharaj,R1032,Theory Classroom CLA7,Campus-8,Lecture,Information Technology,A
+17,A23,A23,Tuesday,17:00,18:00,CHEM_LAB_A,Chemistry Lab,TCH1001,Aryan Maharaj,R1031,Theory Classroom CLA6,Campus-3,Lecture,Mechanical Engineering,A
+14,A24,A24,Tuesday,14:00,15:00,ENG_A,English,TCH1001,Aryan Maharaj,R1003,Theory Classroom C-9,Campus-8,Lecture,Information Technology,A
+20,A24,A24,Wednesday,10:00,11:00,CHEM_LAB_A,Chemistry Lab,TCH1001,Aryan Maharaj,R1060,Mechanical Lab,Campus-8,Lecture,Information Technology,A
+16,A25,A25,Tuesday,16:00,17:00,BEE_LAB_A,Basic Electrical Engineering Lab,TCH1001,Aryan Maharaj,R1041,Theory Classroom CLA16,Campus-8,Lecture,Electronics Engineering,A
+50,A25,A25,Saturday,14:00,15:00,BETC_LAB_A,Basic Electronics Lab,TCH1001,Aryan Maharaj,R1005,Theory Classroom C-11,Campus-8,Lecture,Electronics Engineering,A
+15,A28,A28,Tuesday,15:00,16:00,WORKSHOP_A,Workshop Practice,TCH1001,Aryan Maharaj,R1026,Theory Classroom CLA1,Campus-3,Lecture,Mechanical Engineering,A
+25,A32,A32,Wednesday,16:00,17:00,T&NM_A,Transform and Numerical Methods,TCH1001,Aryan Maharaj,R1032,Theory Classroom CLA7,Campus-3,Lecture,Mechanical Engineering,A
+32,B02,B02,Thursday,14:00,15:00,SC.EL_B,Science Elective,TCH1001,Aryan Maharaj,R1011,Theory Classroom C-17,Campus-15B,Lecture,Computer Science Engineering,B
+45,B05,B05,Saturday,08:00,09:00,PROG_LAB_B,Tutorial & Programming Lab,TCH1001,Aryan Maharaj,R1024,Theory Classroom E105,Campus-15B,Lecture,Computer Science Engineering,B
+44,B06,B06,Friday,17:00,18:00,T&NM_B,Transform and Numerical Methods,TCH1001,Aryan Maharaj,R1009,Theory Classroom C-15,Campus-15B,Lecture,Computer Science Engineering,B
+17,B10,B10,Tuesday,17:00,18:00,PHY_LAB_B,Physics Lab,TCH1001,Aryan Maharaj,R1056,Electronics Lab,Campus-15B,Lecture,Computer Science Engineering,B
+37,B10,B10,Friday,09:00,10:00,PROG_LAB_B,Tutorial & Programming Lab,TCH1001,Aryan Maharaj,R1064,Workshop Lab,Campus-15B,Lecture,Computer Science Engineering,B
+7,B13,B13,Monday,16:00,17:00,EVS_B,Environmental Science,TCH1001,Aryan Maharaj,R1015,Theory Classroom C-21,Campus-15B,Lecture,Computer Science Engineering,B
+21,B15,B15,Wednesday,11:20,12:20,PROG_LAB_B,Tutorial & Programming Lab,TCH1001,Aryan Maharaj,R1001,Theory Classroom C-7,Campus-15B,Lecture,Computer Science Engineering,B
+33,B17,B17,Thursday,15:00,16:00,ENGG.EL_B,Engineering Elective,TCH1001,Aryan Maharaj,R1064,Workshop Lab,Campus-15B,Lecture,Computer Science Engineering,B
+39,B17,B17,Friday,11:20,12:20,T&NM_B,Transform and Numerical Methods,TCH1001,Aryan Maharaj,R1056,Electronics Lab,Campus-15B,Lecture,Computer Science Engineering,B
+20,B21,B21,Wednesday,10:00,11:00,T&NM_B,Transform and Numerical Methods,TCH1001,Aryan Maharaj,R1030,Theory Classroom CLA5,Campus-15B,Lecture,Computer Science Engineering,B
+51,B22,B22,Saturday,15:00,16:00,SC.LS_B,Science of Living Systems,TCH1001,Aryan Maharaj,R1056,Electronics Lab,Campus-15B,Lecture,Computer Science Engineering,B
+2,B25,B25,Monday,10:00,11:00,EVS_B,Environmental Science,TCH1001,Aryan Maharaj,R1009,Theory Classroom C-15,Campus-15B,Lecture,Computer Science Engineering,B
+26,B25,B25,Wednesday,17:00,18:00,SC.EL_B,Science Elective,TCH1001,Aryan Maharaj,R1035,Theory Classroom CLA10,Campus-15B,Lecture,Computer Science Engineering,B
+47,B25,B25,Saturday,10:00,11:00,ENGG.EL_B,Engineering Elective,TCH1001,Aryan Maharaj,R1010,Theory Classroom C-16,Campus-15B,Lecture,Computer Science Engineering,B
+32,B26,B26,Thursday,14:00,15:00,PHY_B,Physics,TCH1001,Aryan Maharaj,R1043,Theory Classroom LT-1,Campus-15B,Lecture,Computer Science Engineering,B
+17,B27,B27,Tuesday,17:00,18:00,T&NM_B,Transform and Numerical Methods,TCH1001,Aryan Maharaj,R1016,Theory Classroom C-22,Campus-15B,Lecture,Computer Science Engineering,B
+43,B33,B33,Friday,16:00,17:00,PHY_B,Physics,TCH1001,Aryan Maharaj,R1028,Theory Classroom CLA3,Campus-15B,Lecture,Computer Science Engineering,B
+48,B36,B36,Saturday,11:20,12:20,ED_GRAPHICS_B,Engineering Drawing & Graphics,TCH1001,Aryan Maharaj,R1040,Theory Classroom CLA15,Campus-15B,Lecture,Computer Science Engineering,B
+2,A29,A29,Monday,10:00,11:00,ENG_A,English,TCH1001,Aryan Maharaj,R1047,Theory Classroom B-103,Campus-8,Lecture,Electronics Engineering,A

@@ -1,0 +1,236 @@
+{
+  "summary": {
+    "total_time": 8.318634033203125,
+    "total_steps": 25,
+    "success_count": 20,
+    "warning_count": 1,
+    "error_count": 4
+  },
+  "detailed_log": [
+    {
+      "step": 1,
+      "name": "Data File Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:53",
+      "elapsed_seconds": 1.6,
+      "details": "All 6 CSV files found",
+      "error": null
+    },
+    {
+      "step": 2,
+      "name": "File Analysis: students.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:53",
+      "elapsed_seconds": 1.6,
+      "details": "Rows: 7200, Columns: 29, Size: 2.03MB",
+      "error": null
+    },
+    {
+      "step": 3,
+      "name": "File Analysis: teachers.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:53",
+      "elapsed_seconds": 1.6,
+      "details": "Rows: 94, Columns: 25, Size: 0.04MB",
+      "error": null
+    },
+    {
+      "step": 4,
+      "name": "File Analysis: subjects.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:53",
+      "elapsed_seconds": 1.6,
+      "details": "Rows: 73, Columns: 21, Size: 0.02MB",
+      "error": null
+    },
+    {
+      "step": 5,
+      "name": "File Analysis: rooms.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:53",
+      "elapsed_seconds": 1.6,
+      "details": "Rows: 66, Columns: 33, Size: 0.03MB",
+      "error": null
+    },
+    {
+      "step": 6,
+      "name": "File Analysis: activities.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:53",
+      "elapsed_seconds": 1.6,
+      "details": "Rows: 125, Columns: 25, Size: 0.04MB",
+      "error": null
+    },
+    {
+      "step": 7,
+      "name": "File Analysis: slot_index.csv",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:53",
+      "elapsed_seconds": 1.6,
+      "details": "Rows: 864, Columns: 22, Size: 0.17MB",
+      "error": null
+    },
+    {
+      "step": 8,
+      "name": "Data Optimization",
+      "status": "ERROR",
+      "timestamp": "2025-06-27 12:40:53",
+      "elapsed_seconds": 1.6,
+      "details": null,
+      "error": "No module named 'pipeline'"
+    },
+    {
+      "step": 9,
+      "name": "Encoder Loading",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Found 9 encoders",
+      "error": null
+    },
+    {
+      "step": 10,
+      "name": "Encoder: day",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Type: LabelEncoder, Classes: 5",
+      "error": null
+    },
+    {
+      "step": 11,
+      "name": "Encoder: time_slot",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Type: LabelEncoder, Classes: 7",
+      "error": null
+    },
+    {
+      "step": 12,
+      "name": "Encoder: department",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Type: LabelEncoder, Classes: 5",
+      "error": null
+    },
+    {
+      "step": 13,
+      "name": "Encoder: batch_type",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Type: LabelEncoder, Classes: 1",
+      "error": null
+    },
+    {
+      "step": 14,
+      "name": "Encoder: subject_type",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Type: LabelEncoder, Classes: 1",
+      "error": null
+    },
+    {
+      "step": 15,
+      "name": "Encoder: campus",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Type: LabelEncoder, Classes: 3",
+      "error": null
+    },
+    {
+      "step": 16,
+      "name": "Encoder: room_type",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Type: LabelEncoder, Classes: 2",
+      "error": null
+    },
+    {
+      "step": 17,
+      "name": "Encoder: teacher_dept",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Type: LabelEncoder, Classes: 10",
+      "error": null
+    },
+    {
+      "step": 18,
+      "name": "Encoder: scaler",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:56",
+      "elapsed_seconds": 3.8,
+      "details": "Type: StandardScaler",
+      "error": null
+    },
+    {
+      "step": 19,
+      "name": "PyTorch Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:59",
+      "elapsed_seconds": 7.73,
+      "details": "Device: cpu, Version: 2.7.1+cpu",
+      "error": null
+    },
+    {
+      "step": 20,
+      "name": "Model Files Check",
+      "status": "WARNING",
+      "timestamp": "2025-06-27 12:40:59",
+      "elapsed_seconds": 7.73,
+      "details": "No trained models found",
+      "error": null
+    },
+    {
+      "step": 21,
+      "name": "Training System Test",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:40:59",
+      "elapsed_seconds": 7.73,
+      "details": "Training modules are importable and functional",
+      "error": null
+    },
+    {
+      "step": 22,
+      "name": "Anomaly Detection",
+      "status": "ERROR",
+      "timestamp": "2025-06-27 12:40:59",
+      "elapsed_seconds": 7.73,
+      "details": null,
+      "error": "No module named 'pipeline'"
+    },
+    {
+      "step": 23,
+      "name": "OR-Tools Check",
+      "status": "SUCCESS",
+      "timestamp": "2025-06-27 12:41:00",
+      "elapsed_seconds": 8.32,
+      "details": "OR-Tools CP-SAT solver available",
+      "error": null
+    },
+    {
+      "step": 24,
+      "name": "Constraint Solving",
+      "status": "ERROR",
+      "timestamp": "2025-06-27 12:41:00",
+      "elapsed_seconds": 8.32,
+      "details": null,
+      "error": "No module named 'pipeline'"
+    },
+    {
+      "step": 25,
+      "name": "Integration Test",
+      "status": "ERROR",
+      "timestamp": "2025-06-27 12:41:00",
+      "elapsed_seconds": 8.32,
+      "details": null,
+      "error": "cannot import name 'TimetableSlot' from 'models' (unknown location)"
+    }
+  ]
+}

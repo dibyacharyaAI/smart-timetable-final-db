@@ -1,0 +1,40 @@
+slot_index,batch_id,section,day,time_start,time_end,subject_code,subject_name,teacher_id,teacher_name,room_id,room_name,campus,activity_type,department,scheme
+27,A02,A02,Thursday,08:00,09:00,ENG_A,English,TCH1002,Rushil Saini,R1017,Theory Classroom C-23,Campus-8,Lecture,Electronics Engineering,A
+45,A03,A03,Saturday,08:00,09:00,ENG_A,English,TCH1002,Rushil Saini,R1025,Theory Classroom E205,Campus-15B,Lecture,Computer Science Engineering,A
+6,A07,A07,Monday,15:00,16:00,SY_A,Sports and Yoga,TCH1002,Rushil Saini,R1035,Theory Classroom CLA10,Campus-3,Lecture,Electrical Engineering,A
+29,A07,A07,Thursday,10:00,11:00,BEE_LAB_A,Basic Electrical Engineering Lab,TCH1002,Rushil Saini,R1053,Theory Classroom 205,Campus-3,Lecture,Electrical Engineering,A
+31,A07,A07,Thursday,13:00,14:00,HASS_A,Humanities Arts and Social Science Elective,TCH1002,Rushil Saini,R1031,Theory Classroom CLA6,Campus-3,Lecture,Electrical Engineering,A
+8,A08,A08,Monday,17:00,18:00,CHEM_A,Chemistry,TCH1002,Rushil Saini,R1066,Sports Yoga (SY),Campus-15B,Lecture,Computer Science Engineering,A
+15,A10,A10,Tuesday,15:00,16:00,BETC_LAB_A,Basic Electronics Lab,TCH1002,Rushil Saini,R1066,Sports Yoga (SY),Campus-3,Lecture,Electrical Engineering,A
+21,A10,A10,Wednesday,11:20,12:20,BEE_A,Basic Electrical Engineering,TCH1002,Rushil Saini,R1035,Theory Classroom CLA10,Campus-3,Lecture,Electrical Engineering,A
+50,A10,A10,Saturday,14:00,15:00,BETC_LAB_A,Basic Electronics Lab,TCH1002,Rushil Saini,R1043,Theory Classroom LT-1,Campus-3,Lecture,Electrical Engineering,A
+35,A11,A11,Thursday,17:00,18:00,HASS_A,Humanities Arts and Social Science Elective,TCH1002,Rushil Saini,R1053,Theory Classroom 205,Campus-8,Lecture,Information Technology,A
+53,A12,A12,Saturday,17:00,18:00,SY_A,Sports and Yoga,TCH1002,Rushil Saini,R1017,Theory Classroom C-23,Campus-8,Lecture,Electronics Engineering,A
+31,A16,A16,Thursday,13:00,14:00,BETC_LAB_A,Basic Electronics Lab,TCH1002,Rushil Saini,R1038,Theory Classroom CLA13,Campus-8,Lecture,Electronics Engineering,A
+27,A22,A22,Thursday,08:00,09:00,ENGG_LAB_A,Engineering Lab,TCH1002,Rushil Saini,R1059,Engineering Drawing Lab,Campus-15B,Lecture,Computer Science Engineering,A
+42,A23,A23,Friday,15:00,16:00,COMM_LAB_A,Communication Lab,TCH1002,Rushil Saini,R1002,Theory Classroom C-8,Campus-3,Lecture,Mechanical Engineering,A
+7,A28,A28,Monday,16:00,17:00,CHEM_LAB_A,Chemistry Lab,TCH1002,Rushil Saini,R1046,Theory Classroom B-102,Campus-3,Lecture,Mechanical Engineering,A
+24,A28,A28,Wednesday,15:00,16:00,E.MECH_A,Engineering Mechanics,TCH1002,Rushil Saini,R1051,Theory Classroom 203,Campus-3,Lecture,Mechanical Engineering,A
+43,A28,A28,Friday,16:00,17:00,HASS_A,Humanities Arts and Social Science Elective,TCH1002,Rushil Saini,R1053,Theory Classroom 205,Campus-3,Lecture,Mechanical Engineering,A
+45,A28,A28,Saturday,08:00,09:00,ENGG_LAB_A,Engineering Lab,TCH1002,Rushil Saini,R1029,Theory Classroom CLA4,Campus-3,Lecture,Mechanical Engineering,A
+19,A34,A34,Wednesday,09:00,10:00,T&NM_A,Transform and Numerical Methods,TCH1002,Rushil Saini,R1030,Theory Classroom CLA5,Campus-8,Lecture,Electronics Engineering,A
+14,A36,A36,Tuesday,14:00,15:00,T&NM_A,Transform and Numerical Methods,TCH1002,Rushil Saini,R1049,Theory Classroom 201,Campus-8,Lecture,Electronics Engineering,A
+13,B04,B04,Tuesday,13:00,14:00,EVS_B,Environmental Science,TCH1002,Rushil Saini,R1051,Theory Classroom 203,Campus-15B,Lecture,Computer Science Engineering,B
+7,B05,B05,Monday,16:00,17:00,SC.LS_B,Science of Living Systems,TCH1002,Rushil Saini,R1006,Theory Classroom C-12,Campus-15B,Lecture,Computer Science Engineering,B
+7,B10,B10,Monday,16:00,17:00,T&NM_B,Transform and Numerical Methods,TCH1002,Rushil Saini,R1053,Theory Classroom 205,Campus-15B,Lecture,Computer Science Engineering,B
+14,B10,B10,Tuesday,14:00,15:00,PHY_LAB_B,Physics Lab,TCH1002,Rushil Saini,R1050,Theory Classroom 202,Campus-15B,Lecture,Computer Science Engineering,B
+26,B12,B12,Wednesday,17:00,18:00,SC.LS_B,Science of Living Systems,TCH1002,Rushil Saini,R1039,Theory Classroom CLA14,Campus-15B,Lecture,Computer Science Engineering,B
+19,B13,B13,Wednesday,09:00,10:00,PHY_B,Physics,TCH1002,Rushil Saini,R1051,Theory Classroom 203,Campus-15B,Lecture,Computer Science Engineering,B
+16,B15,B15,Tuesday,16:00,17:00,PHY_LAB_B,Physics Lab,TCH1002,Rushil Saini,R1013,Theory Classroom C-19,Campus-15B,Lecture,Computer Science Engineering,B
+17,B15,B15,Tuesday,17:00,18:00,PROG_LAB_B,Tutorial & Programming Lab,TCH1002,Rushil Saini,R1023,Theory Classroom A11,Campus-15B,Lecture,Computer Science Engineering,B
+43,B18,B18,Friday,16:00,17:00,EVS_B,Environmental Science,TCH1002,Rushil Saini,R1011,Theory Classroom C-17,Campus-15B,Lecture,Computer Science Engineering,B
+25,B20,B20,Wednesday,16:00,17:00,SC.LS_B,Science of Living Systems,TCH1002,Rushil Saini,R1049,Theory Classroom 201,Campus-15B,Lecture,Computer Science Engineering,B
+6,B21,B21,Monday,15:00,16:00,ENGG.EL_B,Engineering Elective,TCH1002,Rushil Saini,R1056,Electronics Lab,Campus-15B,Lecture,Computer Science Engineering,B
+43,B21,B21,Friday,16:00,17:00,T&NM_B,Transform and Numerical Methods,TCH1002,Rushil Saini,R1002,Theory Classroom C-8,Campus-15B,Lecture,Computer Science Engineering,B
+9,B25,B25,Tuesday,08:00,09:00,PHY_B,Physics,TCH1002,Rushil Saini,R1050,Theory Classroom 202,Campus-15B,Lecture,Computer Science Engineering,B
+22,B25,B25,Wednesday,13:00,14:00,PROG_LAB_B,Tutorial & Programming Lab,TCH1002,Rushil Saini,R1035,Theory Classroom CLA10,Campus-15B,Lecture,Computer Science Engineering,B
+41,B26,B26,Friday,14:00,15:00,ENGG.EL_B,Engineering Elective,TCH1002,Rushil Saini,R1059,Engineering Drawing Lab,Campus-15B,Lecture,Computer Science Engineering,B
+6,B30,B30,Monday,15:00,16:00,PROG_LAB_B,Tutorial & Programming Lab,TCH1002,Rushil Saini,R1036,Theory Classroom CLA11,Campus-15B,Lecture,Computer Science Engineering,B
+49,B31,B31,Saturday,13:00,14:00,T&NM_B,Transform and Numerical Methods,TCH1002,Rushil Saini,R1056,Electronics Lab,Campus-15B,Lecture,Computer Science Engineering,B
+7,B33,B33,Monday,16:00,17:00,ED_GRAPHICS_B,Engineering Drawing & Graphics,TCH1002,Rushil Saini,R1059,Engineering Drawing Lab,Campus-15B,Lecture,Computer Science Engineering,B
+3,B33,B33,Monday,11:20,12:20,PROG_LAB_B,Tutorial & Programming Lab,TCH1002,Rushil Saini,R1033,Theory Classroom CLA8,Campus-15B,Lecture,Computer Science Engineering,B

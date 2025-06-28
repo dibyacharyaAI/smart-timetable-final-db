@@ -1,0 +1,351 @@
+day,time_slot,department,batch_type,subject_type,campus,room_type,teacher_dept,batch_size,has_lab
+Monday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Lab,Computer Science Engineering,100,0
+Wednesday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,09:00-10:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Monday,10:00-11:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Monday,11:00-12:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Monday,13:00-14:00,Electronics Engineering,A,Theory,Campus-8,Lab,Electronics Engineering,100,0
+Monday,14:00-15:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Monday,15:00-16:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Monday,16:00-17:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Tuesday,09:00-10:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Tuesday,10:00-11:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Tuesday,11:00-12:00,Electronics Engineering,A,Theory,Campus-8,Lab,Electronics Engineering,100,0
+Tuesday,13:00-14:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Tuesday,14:00-15:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Tuesday,15:00-16:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Tuesday,16:00-17:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Wednesday,09:00-10:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Wednesday,10:00-11:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Wednesday,11:00-12:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Wednesday,13:00-14:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Wednesday,14:00-15:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Wednesday,15:00-16:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Wednesday,16:00-17:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Thursday,09:00-10:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Thursday,10:00-11:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Thursday,11:00-12:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Thursday,13:00-14:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Thursday,14:00-15:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Thursday,15:00-16:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Thursday,16:00-17:00,Electronics Engineering,A,Theory,Campus-8,Lab,Electronics Engineering,100,0
+Friday,09:00-10:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Friday,10:00-11:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Friday,11:00-12:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Friday,13:00-14:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Friday,14:00-15:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Friday,15:00-16:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Friday,16:00-17:00,Electronics Engineering,A,Theory,Campus-8,Theory,Electronics Engineering,100,0
+Monday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Lab,Computer Science Engineering,100,0
+Friday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Monday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Monday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Wednesday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Wednesday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Friday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Friday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Friday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Monday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Monday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Wednesday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Thursday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Thursday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Friday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Friday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Monday,09:00-10:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Monday,10:00-11:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Monday,11:00-12:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Monday,13:00-14:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Monday,14:00-15:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Monday,15:00-16:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Monday,16:00-17:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Tuesday,09:00-10:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Tuesday,10:00-11:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Tuesday,11:00-12:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Tuesday,13:00-14:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Tuesday,14:00-15:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Tuesday,15:00-16:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Tuesday,16:00-17:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Wednesday,09:00-10:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Wednesday,10:00-11:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Wednesday,11:00-12:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Wednesday,13:00-14:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Wednesday,14:00-15:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Wednesday,15:00-16:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Wednesday,16:00-17:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Thursday,09:00-10:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Thursday,10:00-11:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Thursday,11:00-12:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Thursday,13:00-14:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Thursday,14:00-15:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Thursday,15:00-16:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Thursday,16:00-17:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Friday,09:00-10:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Friday,10:00-11:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Friday,11:00-12:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Friday,13:00-14:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Friday,14:00-15:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Friday,15:00-16:00,Mechanical Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Friday,16:00-17:00,Mechanical Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Monday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Monday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Monday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Monday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Wednesday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Tuesday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Wednesday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Thursday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,09:00-10:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,10:00-11:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,11:00-12:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,13:00-14:00,Computer Science Engineering,A,Theory,Campus-15B,Lab,Computer Science Engineering,100,0
+Friday,14:00-15:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,15:00-16:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Friday,16:00-17:00,Computer Science Engineering,A,Theory,Campus-15B,Theory,Computer Science Engineering,100,0
+Monday,09:00-10:00,Civil Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Monday,10:00-11:00,Civil Engineering,A,Theory,Campus-3,Theory,Physical Education,100,0
+Monday,11:00-12:00,Civil Engineering,A,Theory,Campus-3,Theory,Mathematics,100,0
+Monday,13:00-14:00,Civil Engineering,A,Theory,Campus-3,Lab,Humanities,100,0
+Monday,14:00-15:00,Civil Engineering,A,Theory,Campus-3,Theory,Electronics Engineering,100,0
+Monday,15:00-16:00,Civil Engineering,A,Theory,Campus-3,Theory,Physics,100,0
+Monday,16:00-17:00,Civil Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Tuesday,09:00-10:00,Civil Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,10:00-11:00,Civil Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Tuesday,11:00-12:00,Civil Engineering,A,Theory,Campus-3,Lab,Computer Science Engineering,100,0
+Tuesday,13:00-14:00,Civil Engineering,A,Theory,Campus-3,Theory,Computer Science Engineering,100,0
+Tuesday,14:00-15:00,Civil Engineering,A,Theory,Campus-3,Lab,Electronics Engineering,100,0
+Tuesday,15:00-16:00,Civil Engineering,A,Theory,Campus-3,Theory,Life Sciences,100,0
+Tuesday,16:00-17:00,Civil Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Wednesday,09:00-10:00,Civil Engineering,A,Theory,Campus-3,Theory,Mathematics,100,0
+Wednesday,10:00-11:00,Civil Engineering,A,Theory,Campus-3,Lab,Mathematics,100,0
+Wednesday,11:00-12:00,Civil Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Wednesday,13:00-14:00,Civil Engineering,A,Theory,Campus-3,Lab,Environmental Science,100,0
+Wednesday,14:00-15:00,Civil Engineering,A,Theory,Campus-3,Theory,Mathematics,100,0
+Wednesday,15:00-16:00,Civil Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Wednesday,16:00-17:00,Civil Engineering,A,Theory,Campus-3,Theory,Mechanical Engineering,100,0
+Thursday,09:00-10:00,Civil Engineering,A,Theory,Campus-3,Lab,Life Sciences,100,0
+Thursday,10:00-11:00,Civil Engineering,A,Theory,Campus-3,Lab,Environmental Science,100,0
+Thursday,11:00-12:00,Civil Engineering,A,Theory,Campus-3,Lab,Technical Support,100,0
+Thursday,13:00-14:00,Civil Engineering,A,Theory,Campus-3,Theory,Physical Education,100,0
+Thursday,14:00-15:00,Civil Engineering,A,Theory,Campus-3,Lab,Physics,100,0
+Thursday,15:00-16:00,Civil Engineering,A,Theory,Campus-3,Theory,Environmental Science,100,0
+Thursday,16:00-17:00,Civil Engineering,A,Theory,Campus-3,Theory,Technical Support,100,0
+Friday,09:00-10:00,Civil Engineering,A,Theory,Campus-3,Theory,Mathematics,100,0
+Friday,10:00-11:00,Civil Engineering,A,Theory,Campus-3,Theory,Electronics Engineering,100,0
+Friday,11:00-12:00,Civil Engineering,A,Theory,Campus-3,Theory,Physics,100,0
+Friday,13:00-14:00,Civil Engineering,A,Theory,Campus-3,Theory,Chemistry,100,0
+Friday,14:00-15:00,Civil Engineering,A,Theory,Campus-3,Lab,Mathematics,100,0
+Friday,15:00-16:00,Civil Engineering,A,Theory,Campus-3,Lab,Mechanical Engineering,100,0
+Friday,16:00-17:00,Civil Engineering,A,Theory,Campus-3,Lab,Life Sciences,100,0
+Monday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Monday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Tuesday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Tuesday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Wednesday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Wednesday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Wednesday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Wednesday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Thursday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Thursday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Friday,09:00-10:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,10:00-11:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,11:00-12:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,13:00-14:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Friday,14:00-15:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0
+Friday,15:00-16:00,Electrical Engineering,A,Theory,Campus-3,Theory,Electrical Engineering,100,0
+Friday,16:00-17:00,Electrical Engineering,A,Theory,Campus-3,Lab,Electrical Engineering,100,0

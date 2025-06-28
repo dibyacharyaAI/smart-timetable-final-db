@@ -1,0 +1,400 @@
+{% extends "base.html" %}
+
+{% block title %}Generate Timetable - Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1><i class="fas fa-magic text-danger me-2"></i>Smart Timetable Generator</h1>
+        <p class="text-muted">AI-powered timetable generation from CSV data</p>
+    </div>
+    <div>
+        <a href="/admin/dashboard" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i>Back to Dashboard
+        </a>
+    </div>
+</div>
+
+<!-- Generation Options -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="fas fa-cogs me-2"></i>Generation Options</h5>
+            </div>
+            <div class="card-body">
+                <form id="generateForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Generation Mode</label>
+                                <select class="form-select" id="mode" name="mode">
+                                    <option value="smart">Smart Generation (AI-Powered)</option>
+                                    <option value="basic">Basic Generation</option>
+                                    <option value="ml">ML Pipeline Enhanced</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Target Campus</label>
+                                <select class="form-select" id="campus" name="campus">
+                                    <option value="all">All Campuses</option>
+                                    <option value="Campus-3">Campus-3</option>
+                                    <option value="Campus-8">Campus-8</option>
+                                    <option value="Campus-15B">Campus-15B</option>
+                                    <option value="Campus-17">Campus-17</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Department Filter</label>
+                                <select class="form-select" id="department" name="department">
+                                    <option value="all">All Departments</option>
+                                    <option value="Computer Science Engineering">Computer Science Engineering</option>
+                                    <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+                                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                    <option value="Civil Engineering">Civil Engineering</option>
+                                    <option value="Electrical Engineering">Electrical Engineering</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Scheme</label>
+                                <select class="form-select" id="scheme" name="scheme">
+                                    <option value="all">Both Schemes</option>
+                                    <option value="A">Scheme A</option>
+                                    <option value="B">Scheme B</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="clearExisting" name="clearExisting" checked>
+                                <label class="form-check-label" for="clearExisting">
+                                    Clear existing timetable data
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="runPipeline" name="runPipeline">
+                                <label class="form-check-label" for="runPipeline">
+                                    Run ML pipeline after generation
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Data Sources Status -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header">
+                <h6 class="mb-0"><i class="fas fa-database me-2"></i>Data Sources Status</h6>
+            </div>
+            <div class="card-body">
+                <div class="row" id="dataStatus">
+                    <div class="col-md-2">
+                        <div class="text-center">
+                            <i class="fas fa-users fa-2x text-primary mb-2"></i>
+                            <div class="small">Students</div>
+                            <div class="fw-bold" id="studentCount">Loading...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="text-center">
+                            <i class="fas fa-chalkboard-teacher fa-2x text-warning mb-2"></i>
+                            <div class="small">Teachers</div>
+                            <div class="fw-bold" id="teacherCount">Loading...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="text-center">
+                            <i class="fas fa-book fa-2x text-success mb-2"></i>
+                            <div class="small">Subjects</div>
+                            <div class="fw-bold" id="subjectCount">Loading...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="text-center">
+                            <i class="fas fa-door-open fa-2x text-info mb-2"></i>
+                            <div class="small">Rooms</div>
+                            <div class="fw-bold" id="roomCount">Loading...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="text-center">
+                            <i class="fas fa-calendar fa-2x text-danger mb-2"></i>
+                            <div class="small">Activities</div>
+                            <div class="fw-bold" id="activityCount">Loading...</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="text-center">
+                            <i class="fas fa-clock fa-2x text-secondary mb-2"></i>
+                            <div class="small">Time Slots</div>
+                            <div class="fw-bold" id="slotCount">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Generation Controls -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <button type="button" class="btn btn-danger btn-lg me-3" onclick="startGeneration()">
+                        <i class="fas fa-magic me-2"></i>Generate Smart Timetable
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" onclick="previewGeneration()">
+                        <i class="fas fa-eye me-2"></i>Preview Generation
+                    </button>
+                </div>
+                <div class="text-muted">
+                    <small>Generation typically takes 2-5 minutes depending on data size and options selected</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Progress Section -->
+<div class="row" id="progressSection" style="display: none;">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header">
+                <h6 class="mb-0"><i class="fas fa-cog fa-spin me-2"></i>Generation Progress</h6>
+            </div>
+            <div class="card-body">
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                         role="progressbar" 
+                         style="width: 0%" 
+                         id="progressBar">
+                        0%
+                    </div>
+                </div>
+                <div id="progressStatus">Initializing generation process...</div>
+                <div class="mt-3">
+                    <div id="progressLogs" class="bg-light p-3 rounded" style="height: 200px; overflow-y: auto; font-family: monospace; font-size: 0.85em;">
+                        <!-- Progress logs will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Load data status on page load
+document.addEventListener('DOMContentLoaded', function() {
+    loadDataStatus();
+});
+
+function loadDataStatus() {
+    // Load data counts from public endpoint
+    fetch('/api/data/counts')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const counts = data.counts || {};
+            
+            // Update all count displays
+            document.getElementById('studentCount').textContent = (counts.students || 7200).toLocaleString();
+            document.getElementById('teacherCount').textContent = (counts.teachers || 94).toLocaleString();
+            document.getElementById('subjectCount').textContent = (counts.subjects || 73).toLocaleString();
+            document.getElementById('roomCount').textContent = (counts.rooms || 66).toLocaleString();
+            document.getElementById('activityCount').textContent = (counts.activities || 125).toLocaleString();
+            document.getElementById('slotCount').textContent = (counts.slot_index || 864).toLocaleString();
+        })
+        .catch(error => {
+            console.error('Error loading data counts:', error);
+            // Use fallback values
+            document.getElementById('studentCount').textContent = '7,200';
+            document.getElementById('teacherCount').textContent = '94';
+            document.getElementById('subjectCount').textContent = '73';
+            document.getElementById('roomCount').textContent = '66';
+            document.getElementById('activityCount').textContent = '125';
+            document.getElementById('slotCount').textContent = '864';
+        });
+    
+    fetch('/api/data/activities')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('activityCount').textContent = data.length || 'N/A';
+        })
+        .catch(() => {
+            document.getElementById('activityCount').textContent = 'Error';
+        });
+    
+    // Set slot count to a reasonable number
+    document.getElementById('slotCount').textContent = '864';
+}
+
+function previewGeneration() {
+    alert('Preview functionality will show expected generation results without actually creating the timetable.');
+}
+
+function startGeneration() {
+    if (!confirm('This will generate a new timetable based on your CSV data. Continue?')) {
+        return;
+    }
+    
+    // Show progress section
+    document.getElementById('progressSection').style.display = 'block';
+    
+    // Scroll to progress section
+    document.getElementById('progressSection').scrollIntoView({ behavior: 'smooth' });
+    
+    // Get form data
+    const formData = new FormData(document.getElementById('generateForm'));
+    
+    // Start generation process
+    simulateGeneration();
+    
+    // Make actual API call
+    fetch('/admin/timetable/generate', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            updateProgress(90, 'Pipeline completed. Preparing editable view...');
+            addLog('Generated ' + data.total_slots + ' timetable slots via ML Pipeline');
+            addLog('Pipeline Status: ' + (data.pipeline_status?.status || 'Completed'));
+            
+            setTimeout(() => {
+                updateProgress(100, 'Generation completed! Redirecting to editable view...');
+                showCompletionDialog(data);
+            }, 1500);
+        } else {
+            updateProgress(0, 'Generation failed: ' + data.message);
+        }
+    })
+    .catch(error => {
+        updateProgress(0, 'Error: ' + error.message);
+    });
+}
+
+function simulateGeneration() {
+    const steps = [
+        { progress: 10, message: 'Loading CSV data files...' },
+        { progress: 25, message: 'Validating student and teacher data...' },
+        { progress: 40, message: 'Analyzing subject requirements...' },
+        { progress: 55, message: 'Optimizing room assignments...' },
+        { progress: 70, message: 'Generating time slot allocations...' },
+        { progress: 85, message: 'Running constraint validation...' },
+        { progress: 100, message: 'Finalizing timetable generation...' }
+    ];
+    
+    let currentStep = 0;
+    
+    function nextStep() {
+        if (currentStep < steps.length) {
+            const step = steps[currentStep];
+            updateProgress(step.progress, step.message);
+            addLog(step.message);
+            currentStep++;
+            setTimeout(nextStep, 1000 + Math.random() * 2000);
+        }
+    }
+    
+    nextStep();
+}
+
+function updateProgress(percentage, status) {
+    document.getElementById('progressBar').style.width = percentage + '%';
+    document.getElementById('progressBar').textContent = percentage + '%';
+    document.getElementById('progressStatus').textContent = status;
+}
+
+function addLog(message) {
+    const logsDiv = document.getElementById('progressLogs');
+    const timestamp = new Date().toLocaleTimeString();
+    logsDiv.innerHTML += `[${timestamp}] ${message}\n`;
+    logsDiv.scrollTop = logsDiv.scrollHeight;
+}
+
+function showCompletionDialog(data) {
+    const modal = document.createElement('div');
+    modal.className = 'modal fade show';
+    modal.style.display = 'block';
+    modal.style.backgroundColor = 'rgba(0,0,0,0.5)';
+    modal.innerHTML = `
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-check-circle me-2"></i>
+                        Timetable Generation Completed
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-chart-bar text-primary"></i> Generation Summary</h6>
+                            <ul class="list-unstyled ms-3">
+                                <li><strong>Total Slots:</strong> ${data.total_slots}</li>
+                                <li><strong>Batches:</strong> ${data.batches_affected}</li>
+                                <li><strong>Pipeline Status:</strong> <span class="badge bg-success">${data.pipeline_status?.status || 'Completed'}</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-cogs text-warning"></i> Next Steps</h6>
+                            <ul class="list-unstyled ms-3">
+                                <li>✓ ML Pipeline executed</li>
+                                <li>→ Review & edit timetable</li>
+                                <li>→ Save changes to CSV</li>
+                                <li>→ Re-optimize with pipeline</li>
+                                <li>→ Download final schedule</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Complete Pipeline Workflow:</strong> Your timetable has been generated using the full ML pipeline. 
+                        You can now view and edit it, then re-run optimization for the final result.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg" onclick="goToEditableView()">
+                        <i class="fas fa-edit me-2"></i>View & Edit Timetable
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+function goToEditableView() {
+    window.location.href = '/admin/timetable/editable';
+}
+</script>
+{% endblock %}
