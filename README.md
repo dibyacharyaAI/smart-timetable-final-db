@@ -87,12 +87,11 @@ Username: admin
 Password: admin123
 
 Teacher User: 
-Username: teacher1
-Password: teacher123
+use data from teacher.csv
 
 Student User:
-Username: student1  
-Password: student123
+use data from student.csv
+
 ```
 
 ## 🔧 Configuration
