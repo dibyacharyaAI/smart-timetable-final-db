@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Smart Timetable Management System{% endblock %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h1 class="display-4 mb-3">
+        <i class="fas fa-calendar-alt text-primary me-3"></i>
+        Smart Timetable Management System
+    </h1>
+    <p class="lead text-muted">AI-powered timetable management with multi-user portals</p>
+</div>
+
+{% if current_user.is_authenticated %}
+    <!-- Authenticated User Dashboard -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body text-center">
+                    <h3>Welcome back, {{ current_user.full_name }}!</h3>
+                    <p class="text-muted">Role: <span class="badge bg-primary">{{ current_user.role.title() }}</span></p>
+                    
+                    {% if current_user.role == 'admin' %}
+                        <a href="/admin/dashboard" class="btn btn-custom btn-lg">
+                            <i class="fas fa-tachometer-alt me-2"></i>Admin Dashboard
+                        </a>
+                    {% elif current_user.role == 'teacher' %}
+                        <a href="/teacher/dashboard" class="btn btn-custom btn-lg">
+                            <i class="fas fa-chalkboard-teacher me-2"></i>Teacher Portal
+                        </a>
+                    {% elif current_user.role == 'student' %}
+                        <a href="/student/dashboard" class="btn btn-custom btn-lg">
+                            <i class="fas fa-graduation-cap me-2"></i>Student Portal
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <!-- Guest User - Portal Selection -->
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card portal-card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-user-shield fa-3x text-danger mb-3"></i>
+                    <h4>Admin Portal</h4>
+                    <p class="text-muted">Complete system management, user control, and analytics</p>
+                    <ul class="list-unstyled text-start">
+                        <li><i class="fas fa-check text-success me-2"></i>Full system control</li>
+                        <li><i class="fas fa-check text-success me-2"></i>User management</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Smart timetable generation</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Advanced analytics</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="/auth/register?role=admin" class="btn btn-outline-danger me-2">Register</a>
+                        <a href="/auth/login" class="btn btn-danger">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card portal-card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-chalkboard-teacher fa-3x text-warning mb-3"></i>
+                    <h4>Teacher Portal</h4>
+                    <p class="text-muted">Manage your classes, schedule, and student information</p>
+                    <ul class="list-unstyled text-start">
+                        <li><i class="fas fa-check text-success me-2"></i>Personal timetable</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Limited editing</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Student information</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Schedule downloads</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="/auth/register?role=teacher" class="btn btn-outline-warning me-2">Register</a>
+                        <a href="/auth/login" class="btn btn-warning">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card portal-card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-graduation-cap fa-3x text-success mb-3"></i>
+                    <h4>Student Portal</h4>
+                    <p class="text-muted">View your schedule, teachers, and classmate information</p>
+                    <ul class="list-unstyled text-start">
+                        <li><i class="fas fa-check text-success me-2"></i>Read-only timetable</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Personal schedule</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Teacher information</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Downloadable schedules</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="/auth/register?role=student" class="btn btn-outline-success me-2">Register</a>
+                        <a href="/auth/login" class="btn btn-success">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+<!-- System Features -->
+<div class="row mt-5">
+    <div class="col-12">
+        <h3 class="text-center mb-4">System Features</h3>
+    </div>
+    <div class="col-md-3">
+        <div class="text-center">
+            <i class="fas fa-robot fa-2x text-primary mb-2"></i>
+            <h5>AI-Powered</h5>
+            <p class="text-muted small">Machine learning for anomaly detection and self-healing</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="text-center">
+            <i class="fas fa-users fa-2x text-primary mb-2"></i>
+            <h5>Multi-User</h5>
+            <p class="text-muted small">Role-based access for admin, teachers, and students</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="text-center">
+            <i class="fas fa-download fa-2x text-primary mb-2"></i>
+            <h5>Export Ready</h5>
+            <p class="text-muted small">CSV/Excel downloads for all user types</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="text-center">
+            <i class="fas fa-shield-alt fa-2x text-primary mb-2"></i>
+            <h5>Secure</h5>
+            <p class="text-muted small">PostgreSQL database with encrypted authentication</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
