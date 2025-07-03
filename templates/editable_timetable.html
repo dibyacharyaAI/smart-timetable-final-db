@@ -1,0 +1,102 @@
+
+{% extends "base.html" %}
+{% block title %}Editable Timetable - Teacher{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-3">✏️ Editable Timetable - {{ current_user.full_name }}</h2>
+
+    <div class="d-flex mb-3">
+        <a href="{{ url_for('teacher.download_teacher_timetable', format='csv') }}" class="btn btn-outline-primary me-2">⬇️ Full Timetable</a>
+        <a href="{{ url_for('teacher.teacher_weekly_download', format='csv', week='current') }}" class="btn btn-outline-success me-2">📆 Weekly Timetable</a>
+        <button id="optimizeBtn" class="btn btn-outline-warning">⚙️ Optimize</button>
+    </div>
+
+    {% if slots %}
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th>Day</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Subject</th>
+                    <th>Room</th>
+                    <th>Activity</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for slot in slots %}
+                <tr data-slot-id="{{ slot.id }}">
+                    <td>{{ slot.day }}</td>
+                    <td>{{ slot.time_start }}</td>
+                    <td>{{ slot.time_end }}</td>
+                    <td>{{ slot.subject_name }}</td>
+                    <td>
+                        <select class="form-select form-select-sm room-select">
+                            {% for room in rooms %}
+                                <option value="{{ room.room_name }}" {% if room.room_name == slot.room_name %}selected{% endif %}>
+                                    {{ room.room_name }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                    <td>
+                        <select class="form-select form-select-sm activity-select">
+                            <option value="Lecture" {% if slot.activity_type == 'Lecture' %}selected{% endif %}>Lecture</option>
+                            <option value="Lab" {% if slot.activity_type == 'Lab' %}selected{% endif %}>Lab</option>
+                            <option value="Tutorial" {% if slot.activity_type == 'Tutorial' %}selected{% endif %}>Tutorial</option>
+                        </select>
+                    </td>
+                    <td><button class="btn btn-sm btn-primary update-slot">Save</button></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <p>No timetable slots available.</p>
+    {% endif %}
+</div>
+
+<script>
+document.querySelectorAll('.update-slot').forEach(btn => {
+    btn.addEventListener('click', async function () {
+        const row = this.closest('tr');
+        const slotId = row.dataset.slotId;
+        const roomName = row.querySelector('.room-select').value;
+        const activityType = row.querySelector('.activity-select').value;
+
+        const response = await fetch(`/teacher/timetable/edit/${slotId}`, {
+            method: 'PUT',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                room_name: roomName,
+                activity_type: activityType
+            })
+        });
+
+        const result = await response.json();
+        if (result.success) {
+            alert('Updated successfully');
+        } else {
+            alert('Error: ' + result.message);
+        }
+    });
+});
+
+document.getElementById('optimizeBtn').addEventListener('click', async function () {
+    const response = await fetch('/teacher/timetable/optimize', {
+        method: 'POST'
+    });
+    const result = await response.json();
+    if (result.success) {
+        alert('Optimization complete');
+        location.reload();
+    } else {
+        alert('Optimization failed: ' + result.message);
+    }
+});
+</script>
+{% endblock %}
