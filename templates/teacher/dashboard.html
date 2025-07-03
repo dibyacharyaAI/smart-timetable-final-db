@@ -1,0 +1,83 @@
+
+{% extends "base.html" %}
+{% block title %}Teacher Dashboard - Smart Timetable System{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4">👨‍🏫 Teacher Dashboard</h2>
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4>{{ current_user.full_name }}</h4>
+      <p><strong>Teacher ID:</strong> {{ current_user.teacher_id }}</p>
+      <p><strong>Department:</strong> {{ current_user.department }}</p>
+      <p><strong>Campus:</strong> {{ current_user.campus }}</p>
+      <a href="{{ url_for('teacher.download_teacher_timetable', format='csv') }}" class="btn btn-outline-success me-2">⬇️ Download Full Timetable</a>
+      <a href="{{ url_for('teacher.teacher_weekly_download', format='csv', week='current') }}" class="btn btn-outline-primary me-2">📆 Download Weekly Timetable</a>
+      <a href="{{ url_for('teacher.editable_timetable') }}" class="btn btn-outline-warning">✏️ Edit Timetable</a>
+    </div>
+  </div>
+
+  <div class="row text-center mb-4">
+    <div class="col">
+      <div class="card bg-light border-info">
+        <div class="card-body">
+          <h5 class="card-title">Weekly Classes</h5>
+          <p class="card-text fs-4">{{ stats.total_classes }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-light border-secondary">
+        <div class="card-body">
+          <h5 class="card-title">Subjects</h5>
+          <p class="card-text fs-4">{{ stats.unique_subjects }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-light border-warning">
+        <div class="card-body">
+          <h5 class="card-title">Batches</h5>
+          <p class="card-text fs-4">{{ stats.unique_batches }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-light border-primary">
+        <div class="card-body">
+          <h5 class="card-title">Today's Classes</h5>
+          <p class="card-text fs-4">{{ stats.today_classes }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="mb-3"><i class="bi bi-calendar-event"></i> Today's Schedule</h4>
+  {% if today_slots %}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Subject</th>
+          <th>Batch</th>
+          <th>Room</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for slot in today_slots %}
+        <tr>
+          <td>{{ slot.time_start }} - {{ slot.time_end }}</td>
+          <td>{{ slot.subject_name }}</td>
+          <td>{{ slot.batch_id }} - {{ slot.section }}</td>
+          <td>{{ slot.room_name }}</td>
+          <td>{{ slot.activity_type }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p class="text-muted">No classes scheduled for today.</p>
+  {% endif %}
+</div>
+{% endblock %}
