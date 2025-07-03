@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard - Smart Timetable System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1><i class="fas fa-tachometer-alt text-danger me-2"></i>Admin Dashboard</h1>
+        <p class="text-muted">Complete system management and analytics</p>
+    </div>
+    <div>
+        <a href="/admin/generate_timetable" class="btn btn-danger">
+            <i class="fas fa-magic me-2"></i>Generate Smart Timetable
+        </a>
+    </div>
+</div>
+
+<!-- Statistics Cards -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="stats-card">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h5>Total Users</h5>
+                    <h3>{{ stats.total_users }}</h3>
+                </div>
+                <i class="fas fa-users fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stats-card">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h5>Timetable Slots</h5>
+                    <h3>{{ stats.total_slots }}</h3>
+                </div>
+                <i class="fas fa-calendar fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stats-card">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h5>Total Students</h5>
+                    <h3>{{ stats.total_students }}</h3>
+                </div>
+                <i class="fas fa-graduation-cap fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stats-card">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h5>Total Teachers</h5>
+                    <h3>{{ stats.total_teachers }}</h3>
+                </div>
+                <i class="fas fa-chalkboard-teacher fa-2x"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Actions -->
+<div class="row mb-4">
+    <div class="col-12">
+        <h4>Quick Actions</h4>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                <h5>User Management</h5>
+                <p class="text-muted">Manage admin, teacher, and student accounts</p>
+                <a href="/admin/users" class="btn btn-outline-primary">Manage Users</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-calendar-alt fa-3x text-success mb-3"></i>
+                <h5>Timetable Management</h5>
+                <p class="text-muted">Create, edit, and manage class schedules</p>
+                <a href="/admin/timetable" class="btn btn-outline-success">Manage Timetables</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-download fa-3x text-warning mb-3"></i>
+                <h5>Export Data</h5>
+                <p class="text-muted">Download timetables in CSV/Excel format</p>
+                <a href="/admin/download_timetable" class="btn btn-outline-warning">Download Reports</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ML Pipeline Status -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="fas fa-robot me-2"></i>ML Pipeline Status</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-code text-success me-2"></i>
+                            <span>Time-slot Encoding</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-brain text-info me-2"></i>
+                            <span>RNN Autoencoder Training</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-shield-alt text-warning me-2"></i>
+                            <span>Anomaly Detection</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-tools text-primary me-2"></i>
+                            <span>Self-Healing Module</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-balance-scale text-danger me-2"></i>
+                            <span>Constraint Solver</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-cogs text-success me-2"></i>
+                            <span>Pipeline Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-success me-2" onclick="showWeeklyDownloadModal()">
+                        <i class="fas fa-download me-2"></i>Download Weekly Timetable
+                    </button>
+                    <button class="btn btn-primary" onclick="runMLPipeline()">
+                        <i class="fas fa-play me-2"></i>Run Complete ML Pipeline
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Activity -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header">
+                <h6 class="mb-0">Recent Timetable Changes</h6>
+            </div>
+            <div class="card-body">
+                <div class="list-group list-group-flush">
+                    <div class="list-group-item border-0 px-0">
+                        <small class="text-muted">No recent changes recorded</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header">
+                <h6 class="mb-0">System Information</h6>
+            </div>
+            <div class="card-body">
+                <small class="text-muted">
+                    <strong>Database:</strong> PostgreSQL<br>
+                    <strong>ML Framework:</strong> PyTorch<br>
+                    <strong>Constraint Solver:</strong> OR-Tools<br>
+                    <strong>Status:</strong> <span class="text-success">Online</span>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function runMLPipeline() {
+    if (confirm('This will run the complete ML pipeline. This may take several minutes. Continue?')) {
+        // Show loading state
+        const btn = event.target;
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Running Pipeline...';
+        btn.disabled = true;
+        
+        // Make AJAX request to run pipeline
+        fetch('/admin/run_pipeline', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+            
+            if (data.success) {
+                alert('ML Pipeline completed successfully!');
+            } else {
+                alert('Pipeline failed: ' + data.message);
+            }
+        })
+        .catch(error => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+            alert('Error running pipeline: ' + error.message);
+        });
+    }
+}
+</script>
+{% endblock %}
